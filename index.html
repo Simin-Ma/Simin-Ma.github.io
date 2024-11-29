@@ -1,10 +1,262 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Welcome to My Website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simin Ma</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #fff;
+        }
+
+        .header {
+            background-color: #333;
+            color: #fff;
+            padding: 2rem;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            margin-bottom: 3rem;
+        }
+
+        .section h2 {
+            font-size: 1.8rem;
+            color: #333;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 2px solid #333;
+        }
+
+        .contact-info {
+            text-align: center;
+            margin: 1rem 0;
+            color: #666;
+        }
+
+        .contact-info p {
+            margin: 0.5rem 0;
+        }
+
+        .experience-item {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #eee;
+        }
+
+        .experience-item:last-child {
+            border-bottom: none;
+        }
+
+        .experience-item h3 {
+            color: #444;
+            margin-bottom: 0.5rem;
+            font-size: 1.3rem;
+        }
+
+        .experience-item .date {
+            color: #666;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item .location {
+            color: #666;
+            font-style: italic;
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item p {
+            margin-bottom: 0.5rem;
+        }
+
+        .experience-item ul {
+            list-style-position: inside;
+            margin-left: 1rem;
+        }
+
+        .experience-item li {
+            margin-bottom: 0.5rem;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .skill-category {
+            background-color: #f8f8f8;
+            padding: 1rem;
+            border-radius: 5px;
+        }
+
+        .skill-category h3 {
+            color: #444;
+            margin-bottom: 0.8rem;
+            font-size: 1.2rem;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            margin-top: 1rem;
+        }
+
+        .social-links a {
+            color: #fff;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+        }
+
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 1rem;
+            }
+            
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello, World!</h1>
-    <p>This is my personal website hosted on GitHub Pages.</p>
+    <header class="header">
+        <h1>Simin Ma</h1>
+        <div class="contact-info">
+            <p>Data Scientist | Master's Student at TU Dortmund</p>
+            <p>Email: simin.ma@tu-dortmund.de | Tel: +49 155-6646-2395</p>
+        </div>
+        <div class="social-links">
+            <a href="https://linkedin.com">LinkedIn</a>
+            <a href="https://github.com">GitHub</a>
+        </div>
+    </header>
+
+    <div class="container">
+        <section class="section" id="education">
+            <h2>Education</h2>
+            <div class="experience-item">
+                <h3>Master of Data Science</h3>
+                <div class="date">October 2020 - Present</div>
+                <div class="location">Technische Universität Dortmund</div>
+                <p>Relevant Coursework: Advanced Statistical Learning, Survival Analysis, Information Mining, Big Data Analytics, Deep Learning, Natural Language Processing, R and Python.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Study Abroad Program</h3>
+                <div class="date">September 2016 - July 2017</div>
+                <div class="location">University of Malaya</div>
+                <p>Relevant Coursework: Numerical Analysis, Data Visualization, Data Structure and Programming in Java.</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Bachelor of Applied Statistics</h3>
+                <div class="date">September 2015 - June 2019</div>
+                <div class="location">Anhui University of Finance and Economics</div>
+                <p>Relevant Coursework: Theory and Application of Statistics, Time Series Analysis, Big Data Management, Multiple Regression Analysis, Economics, R.</p>
+            </div>
+        </section>
+
+        <section class="section" id="experience">
+            <h2>Experience</h2>
+            <div class="experience-item">
+                <h3>Data Analyst</h3>
+                <div class="date">Oct 2024 - Present</div>
+                <div class="location">Intrum - Internship, Essen, Germany</div>
+                <p>Fine-tune the LLM based on private datasets and create the chatbot for internal usage</p>
+            </div>
+
+            <div class="experience-item">
+                <h3>Data Analysis Assistant</h3>
+                <div class="date">July 2019 - February 2020</div>
+                <div class="location">SHEIN, Nanjing, China</div>
+                <ul>
+                    <li>Participated in designing scientific A/B Testing and optimized digital marketing campaign on Google Ads, led to approximately 20% increase in ROI on average.</li>
+                    <li>Boosted active user rate by 17% with tailored discount strategies for customer segments.</li>
+                    <li>Leveraged SQL to compute conversions/retention rates and generate summary statistics tables.</li>
+                    <li>Developed interactive dashboards in Power BI and Tableau to visualize KPIs and sales performance.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="projects">
+            <h2>Projects and Research Experience</h2>
+            <div class="experience-item">
+                <h3>Uncertainty Quantification in Deep Learning Models</h3>
+                <ul>
+                    <li>Developed and implemented deep learning uncertainty quantification methods using BNN, SNGP, and PN.</li>
+                    <li>Utilized Python and PyTorch for model training, fine-tuning, and method implementation.</li>
+                    <li>Documented findings for integration into ongoing research within the LS9 research group at TU Dortmund.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Generative Adversarial Network (GAN) Implementation</h3>
+                <ul>
+                    <li>Developed and trained a GAN model on the MNIST dataset using Keras.</li>
+                    <li>Delivered a comprehensive presentation on GAN evaluation metrics, limitations, and potential applications.</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <h3>Health Insurance Cross Sell Prediction</h3>
+                <ul>
+                    <li>Conducted Bayesian Logistic Regression and XGBoost to classify potential customers.</li>
+                    <li>Evaluated model accuracy with XGBoost achieving an AUC of 86.11%.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="section" id="skills">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Programming and Toolkits</h3>
+                    <p>Python(Numpy, Pandas, PyTorch), R(dplyr, ggplot, olsrr, survival), SQL, Java</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Software and Platforms</h3>
+                    <p>Excel(VBA), Power BI, Tableau</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Statistical Analysis</h3>
+                    <p>Hypothesis Testing(T-Test, F-Test, Chi-square Test), A/B Testing, Anova</p>
+                </div>
+
+                <div class="skill-category">
+                    <h3>Machine Learning</h3>
+                    <p>Logistic Regression, Decision Tree, Random Forest, KNN, XGBoost, PCA</p>
+                </div>
+            </div>
+        </section>
+    </div>
 </body>
 </html>
